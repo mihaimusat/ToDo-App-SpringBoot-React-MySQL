@@ -1,35 +1,31 @@
-package com.endava.todo.model;
+package com.endava.todo.controller.dto;
 
+import com.endava.todo.model.Priority;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
-@Entity
-@Table(name = "items")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-public class ToDoItem {
+public class ToDoItemDto {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "title")
+    @NotNull(message = "The title cannot be empty")
     private String title;
 
-    @Column(name = "priority")
+    @NotNull(message = "The priority cannot be empty")
     private Priority priority;
 
-    @Column(name = "completed")
+    @NotNull(message = "The completion status cannot be empty")
     private Boolean completed;
 
-    @Column(name = "due_date")
+    @NotNull(message = "The due date cannot be empty")
     private LocalDate dueDate;
 }
