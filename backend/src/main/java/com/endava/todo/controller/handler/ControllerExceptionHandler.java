@@ -1,6 +1,6 @@
 package com.endava.todo.controller.handler;
 
-import com.endava.todo.exceptions.NotFoundException;
+import com.endava.todo.exception.NotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.ObjectError;

@@ -1,6 +1,6 @@
 package com.endava.todo.service;
 
-import com.endava.todo.exceptions.NotFoundException;
+import com.endava.todo.exception.NotFoundException;
 import com.endava.todo.model.ToDoItem;
 import com.endava.todo.repository.ToDoRepository;
 import lombok.AllArgsConstructor;

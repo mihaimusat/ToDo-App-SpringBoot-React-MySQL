@@ -1,4 +1,4 @@
-package com.endava.todo.exceptions;
+package com.endava.todo.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

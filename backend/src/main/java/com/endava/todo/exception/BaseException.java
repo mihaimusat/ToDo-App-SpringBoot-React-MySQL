@@ -1,4 +1,4 @@
-package com.endava.todo.exceptions;
+package com.endava.todo.exception;
 
 public class BaseException extends RuntimeException {
 
